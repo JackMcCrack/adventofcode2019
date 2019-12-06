@@ -73,11 +73,10 @@ while you != san:
             ps[osan] = i
             osan -= 1
 #    print(you,san)
-# orbit path met (at COM) because off my some
+# orbit path met (at COM) because off by some
 print(py)
 print(ps)
-you2san = {}
-i = 1
+i = 1   #i = osan #works well with input.example2 but not with real data
 while i <= len(ps):
     if (ps[i] == py[i] and ps[i+1] == py[i+1]):
         del(ps[i])
